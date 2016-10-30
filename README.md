@@ -44,6 +44,17 @@ To remove firewall module please run following command:
 
 1. rmmod firewall
 
+Firewall Rules:
+================
+   
+   1. Block all unsolicited ICMP packets coming in from outside except the ones going to the web-server. However,the local hosts should be able to ping outside.
+   
+   2. Block all ssh attempts from outside.
+   
+   3. Block port 80 (http) access from outside except for the web-server and test that an internal website on a local host is only accessible from inside.
+
+
+
 System detail
 ===============
       This code is tested in below linux environment:
