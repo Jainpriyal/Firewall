@@ -32,7 +32,9 @@ root@Firewall:~# make
     make[1]: Leaving directory `/usr/src/linux-headers-3.13.0-68-generic'
     
 3. To check information about that module:
+
       root@Firewall:~# modinfo firewall.ko
+
       filename:       /root/firewall.ko
       srcversion:     5E8AB462D88D98EABC598BC
       depends:        
