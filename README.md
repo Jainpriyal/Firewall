@@ -30,14 +30,13 @@ root@Firewall:~# make
     MODPOST 1 modules
     LD [M]  /root/firewall.ko
     make[1]: Leaving directory `/usr/src/linux-headers-3.13.0-68-generic'
-
+    
 3. To check information about that module:
-
-   root@Firewall:~# modinfo firewall.ko
-   filename:       /root/firewall.ko
-   srcversion:     5E8AB462D88D98EABC598BC
-   depends:        
-   vermagic:       3.13.0-68-generic SMP mod_unload modversions 
+      root@Firewall:~# modinfo firewall.ko
+      filename:       /root/firewall.ko
+      srcversion:     5E8AB462D88D98EABC598BC
+      depends:        
+      vermagic:       3.13.0-68-generic SMP mod_unload modversions 
 
 To remove firewall module please run following command:
 
