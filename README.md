@@ -1,17 +1,22 @@
 Changes
 =========
 Before inserting firewall, please make below changes in the firewall code:
+
 1. Change it to your web server ip: 
    static unsigned char *ip_address = "\xC0\xA8\x01\x03"
+   
 2. Also change eth1 to the interface name by which web client is connected with firewall
 
 Running firewall
 ==================
 To insert firewall module please run following command: 
-1. make
+
+1. make  
+
 2. insmod firewall.ko
 
 After running make you will get output like this:
+
 root@Firewall:~# make
 make -C /lib/modules/3.13.0-68-generic/build M=/root modules
 make[1]: Entering directory `/usr/src/linux-headers-3.13.0-68-generic'
@@ -26,6 +31,7 @@ make[1]: Entering directory `/usr/src/linux-headers-3.13.0-68-generic'
 make[1]: Leaving directory `/usr/src/linux-headers-3.13.0-68-generic'
 
 3. To check information about that module:
+
 root@Firewall:~# modinfo firewall.ko
 filename:       /root/firewall.ko
 srcversion:     5E8AB462D88D98EABC598BC
@@ -33,6 +39,7 @@ depends:
 vermagic:       3.13.0-68-generic SMP mod_unload modversions 
 
 To remove firewall module please run following command:
+
 1. rmmod firewall
 
 System detail
